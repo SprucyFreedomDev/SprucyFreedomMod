@@ -12,7 +12,7 @@ server:
   address: SprucyFreedom.primedtnt.com
 
   # Shown at the server list
-  motd: SprucyFreedom &8- New Server &8- %mcversion%
+  motd: SprucyFreedom &8- Free OP &8- %mcversion% &8- Join Now
 
   # Every word in the MOTD will be a different color unless prefixed by a color code
   colorful_motd: true
