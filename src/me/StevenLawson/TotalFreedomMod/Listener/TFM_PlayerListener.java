@@ -712,41 +712,41 @@ public class TFM_PlayerListener implements Listener {
         //TODO: Cleanup
         if (TFM_Util.SFM_DEVELOPERS.contains(player.getName())) {
             player.setPlayerListName(ChatColor.DARK_PURPLE + player.getName());
-            TFM_PlayerData.getPlayerData(player).setTag("&8[&5Developer&8]");
+            TFM_PlayerData.getPlayerData(player).setTag("&7[&5Developer&7]");
         } else if (TFM_AdminList.isSuperAdmin(player)) {
             if (TFM_ConfigEntry.SERVER_OWNERS.getList().contains(player.getName())) {
                 player.setPlayerListName(ChatColor.BLUE + player.getName());
-                TFM_PlayerData.getPlayerData(player).setTag("&8[&4Owner&8]");
+                TFM_PlayerData.getPlayerData(player).setTag("&7[&4Owner&7]");
                 afterNameSet(player);
                 return;
             } else if (TFM_Util.CO_OWNERS.contains(player.getName())) {
                 player.setPlayerListName(ChatColor.BLUE + player.getName());
-                TFM_PlayerData.getPlayerData(player).setTag("&8[&9Co Owner&8]");
+                TFM_PlayerData.getPlayerData(player).setTag("&7[&9Co Owner&7]");
                 afterNameSet(player);
                 return;
             } else if (TFM_Util.EXECUTIVES.contains(player.getName())) {
                 player.setPlayerListName(ChatColor.YELLOW + player.getName());
-                TFM_PlayerData.getPlayerData(player).setTag("&8[&aExecutive&8]");
+                TFM_PlayerData.getPlayerData(player).setTag("&7[&aExecutive&7]");
                 afterNameSet(player);
                 return;
             } else if (player.getName().equals("")) {
                 player.setPlayerListName(ChatColor.RED + player.getName());
-                TFM_PlayerData.getPlayerData(player).setTag("&8[&6Admin Manager&8]");
+                TFM_PlayerData.getPlayerData(player).setTag("&7[&6Admin Manager&7]");
                 afterNameSet(player);
                 return;
             } else if (TFM_AdminList.isSeniorAdmin(player)) {
                 player.setPlayerListName(ChatColor.LIGHT_PURPLE + player.getName());
-                TFM_PlayerData.getPlayerData(player).setTag("&8[&dSenior Admin&8]");
+                TFM_PlayerData.getPlayerData(player).setTag("&7[&dSenior Admin&7]");
                 afterNameSet(player);
                 return;
             } else if (TFM_AdminList.isTelnetAdmin(player, true)) {
                 player.setPlayerListName(ChatColor.DARK_GREEN + player.getName());
-                TFM_PlayerData.getPlayerData(player).setTag("&8[&2Telnet Admin&8]");
+                TFM_PlayerData.getPlayerData(player).setTag("&7[&2Telnet Admin&7]");
                 afterNameSet(player);
                 return;
             } else {
                 player.setPlayerListName(ChatColor.AQUA + player.getName());
-                TFM_PlayerData.getPlayerData(player).setTag("&8[&BSuper Admin&8]");
+                TFM_PlayerData.getPlayerData(player).setTag("&7[&BSuper Admin&7]");
                 afterNameSet(player);
                 return;
             }
